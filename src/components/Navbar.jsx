@@ -1,10 +1,14 @@
 import React from "react";
 import { Link } from "react-router-dom"
+
+import "../cssStyles/Navbar.css"
+import ReorderIcon from "@material-ui/icons/Reorder";
+
 function Navbar() {
     return (
         <div className="navbar">
             <div className="toggleButton">
-                <button> Toggle Button for Mobile Users </button>
+                <button> <ReorderIcon /> </button>
             </div>
             <div className="links">
                 <Link to="/"> Home </Link>

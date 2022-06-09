@@ -6,10 +6,13 @@ import Home from "./pages/Home";
 import Experience from "./pages/Experience";
 import Projects from "./pages/Projects";
 import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
+
+import "./cssStyles/App.css"
 
 function App() {
   return (
-    <div >
+    <div className="App">
       <Router>
           <Navbar />
           <Routes>
@@ -17,6 +20,7 @@ function App() {
               <Route path="/projects" element={<Projects />} />
               <Route path="/experience" element={<Experience />} />
           </Routes>
+          <Footer />
       </Router>
     </div>
   );

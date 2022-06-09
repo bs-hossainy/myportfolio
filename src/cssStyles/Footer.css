@@ -1,0 +1,22 @@
+
+#footer {
+    height: 110px;
+    width: 100%;
+    bottom: 0;
+    background: cadetblue;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    padding-top: 15px;
+}
+
+#footer p {
+    color: wheat;
+}
+
+#socialMedia svg{
+    color: wheat;
+    font-size: 35px;
+    cursor: pointer;
+    margin: 10px;
+}
