@@ -1,6 +1,39 @@
+/* CSS styles for the navigation panel */
 
 .navbar {
     height: 95px;
     width: 100%;
     background: cadetblue;
+}
+
+.navbar a {
+    color: wheat;
+    text-decoration: none;
+    margin: 15px;
+    font-size: 18px;
+}
+
+.links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#expand {
+    height: 100vh;
+}
+
+#expand .links {
+    flex-direction: column;
+    margin-top: 90px;
+    justify-content: flex-start;
+}
+
+#expand a {
+    width: 100%;
+    text-align: center;
+}
+
+#close a {
+    display: none;
 }
