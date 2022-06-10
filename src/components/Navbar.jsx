@@ -1,5 +1,5 @@
-import React, {useState} from "react";
-import { Link } from "react-router-dom"
+import React, {useEffect, useState} from "react";
+import {Link, useLocation} from "react-router-dom"
 
 import "../cssStyles/Navbar.css"
 import ReorderIcon from "@material-ui/icons/Reorder";
@@ -8,6 +8,14 @@ function Navbar() {
 
     // Clicking on the button should open the Navbar
     const [isNavbarExpanded, setNavbarExpanded] = useState(false);
+
+    const location = useLocation();
+
+    useEffect(
+        () => {
+            setNavbarExpanded(false);
+        }, [location]
+    );
 
     return (
         <div className="navbar" id={isNavbarExpanded ? "expand" : "close"}>

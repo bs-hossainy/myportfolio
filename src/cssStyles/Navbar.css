@@ -6,17 +6,40 @@
     background: cadetblue;
 }
 
-.navbar a {
-    color: wheat;
-    text-decoration: none;
-    margin: 15px;
-    font-size: 18px;
-}
-
 .links {
+    width: 100%;
+    height: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
+    color: wheat;
+}
+
+.navbar a {
+    color: wheat;
+    text-decoration: none;
+    margin: 10px;
+    font-size: 15px;
+}
+
+.toggleButton {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.toggleButton svg {
+    font-size: 50px;
+}
+
+.toggleButton button {
+    margin-right: 15px;
+    background-color: transparent;
+    border: none;
+    color: wheat;
+    cursor: pointer;
 }
 
 #expand {
@@ -25,7 +48,6 @@
 
 #expand .links {
     flex-direction: column;
-    margin-top: 90px;
     justify-content: flex-start;
 }
 
@@ -34,6 +56,30 @@
     text-align: center;
 }
 
-#close a {
-    display: none;
+
+@media only screen and (max-width: 550px) {
+    .toggleButton {
+        display: flex;
+    }
+    #close a {
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 550px) {
+    .toggleButton {
+        display: none;
+    }
+
+    .hiddenLinks {
+        display: none;
+    }
+
+    #expand {
+        height: 100px;
+    }
+
+    #expand .links {
+        flex-direction: row;
+    }
 }

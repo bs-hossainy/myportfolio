@@ -1,22 +1,29 @@
-
 #footer {
-    height: 110px;
     width: 100%;
-    bottom: 0;
+    height: 110px;
     background: cadetblue;
-    position: absolute;
+    display: flex;
     justify-content: center;
     align-items: center;
-    padding-top: 15px;
+    flex-direction: column;
+    padding-top: 10px;
+    position: absolute;
+    bottom: 0;
 }
 
 #footer p {
     color: wheat;
 }
 
-#socialMedia svg{
+#socialMedia svg {
     color: wheat;
+    margin: 10px;
     font-size: 35px;
     cursor: pointer;
-    margin: 10px;
+}
+
+@media only screen and (max-width: 600px) {
+    #footer svg {
+        font-size: 40px;
+    }
 }
